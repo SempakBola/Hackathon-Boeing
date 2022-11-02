@@ -5,53 +5,43 @@
 }
 
 body {
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-family: Arial;
    padding: 10px;
-   /* Covers entire browser
-   padding: 0;
-   margin: 0;
-   */
-   background: #f1f1f1;
+   background: #ffffff;
 }
 
 /* Header (div) formatting */
 .header {
-   padding: 10px 10px 0px 10px;
-   text-align: left;
-   background-color: cadetblue;
-   color: #000000;
+   padding: 10px;
+   text-align: center;
+   background-color: #fcfff6;
+   color: #40c6ef;
 }
 
 .header h1 {
    font-size: 50px;
 }
+.content h3 {
+   font-size: 25px;
+}
 
 
 /* Make the logo have a rounded edge */
 img.top-image {
-   vertical-align: left;
+   vertical-align: middle;
 }
 
-.centre {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  height: auto;
-}
-
-/* CSS Layout from W3Schools: @author https://www.w3schools.com/css/css_templates.asp */
+/* CSS Layout from W3Schools: https://www.w3schools.com/css/css_templates.asp */
 /* Style the top navigation bar */
 .topnav {
    overflow: hidden;
    background-color: #333;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
  }
  
  /* Style the topnav links */
  .topnav a {
    float: left;
+   width: 20%;
    display: block;
    color: #f2f2f2;
    text-align: center;
@@ -64,378 +54,239 @@ img.top-image {
    background-color: #ddd;
    color: black;
  }
-
- /* Style the Search box inside the the navigation bar */
- .topnav input[type=text] {
-   float: right;
-   padding: 6px;
-   border: none;
-   margin-top: 8px;
-   margin-right: 16px;
-   font-size: 17px;
- }
  
  /* Style the content */
  .content {
-   /*background-color: #ddd;*/
-   background-color: white;
+   text-align:center;
+   background-color: rgb(255, 255, 255);
+   padding: 10px 100px;
+ }
+ .center {
+   margin: auto;
+   width: 80%;
+   border: 3px solid #1a1b17fd;
    padding: 10px;
  }
- 
+ .homepageimage {
+    vertical-align: middle;
+    height: 600px;
+    padding: 30px;
+ }
+ .keyfact1, .keyfact2, .keyfact3 {
+    float:left;
+    background-color: rgb(251, 217, 217);
+    border: 15px solid #000000;
+    width: 33.33%;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-style:double;
+ }
+.container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   gap: 25px;
+}
+
+ input {
+    padding: 12px 20px;
+    border-style: groove;
+ }
+ form {
+    padding: 15px 25px;
+ }
+
+ button {
+    padding: 14px 25px;
+ }
+
  /* Style the footer */
  .footer {
-   background-color: #333;
+   background-color: #cccccc;
    padding: 10px;
-   position: relative;
-  /*left: 0;*/
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: #f2f2f2;
- }
- /*background-color: #cccccc;*/
-
-
-
-/* Additional Things Added ----------------------------------------------------*/ 
-
-
-
-/* CSS Column from W3Schools: @author https://www.w3schools.com/howto/howto_css_three_columns.asp */
-/* Column */
- .column {
-   float: left;
-   width: 33.33%;
-   padding-left: 25px;
-   padding-right: 25px;
-   padding-top: 10px;
-   padding-bottom: 10px;
  }
 
- .column1 {
-  text-align: center;
- }
 
- .HPtitle {
-  text-align: center;
+form {
+   border: 3px solid #f1f1f1;
  }
  
-/* CSS Row from W3Schools: @author https://www.w3schools.com/howto/howto_css_three_columns.asp */
-/* Clear floats after the columns */
- .row:after {
-   content: "";
-   display: table;
-   clear: both;
+ /* Full-width inputs */
+ input[type=text], input[type=password] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+ }
+ 
+ /* Set a style for all buttons */
+ button {
+   background-color: #04AA6D;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+ }
+ 
+ /* Add a hover effect for buttons */
+ button:hover {
+   opacity: 0.8;
+ }
+ 
+ /* Extra style for the cancel button (red) */
+ .cancelbtn {
+   width: auto;
+   padding: 10px 18px;
+   background-color: #f44336;
+ }
+ 
+ /* Center the avatar image inside this container */
+ .imgcontainer {
+   text-align: center;
+   margin: 24px 0 12px 0;
+ }
+ 
+ /* Avatar image */
+ img.avatar {
+   width: 40%;
+   border-radius: 50%;
+ }
+ 
+ /* Add padding to containers */
+ .container {
+   padding: 16px;
+ }
+ 
+ /* The "Forgot password" text */
+ span.psw {
+   float: right;
+   padding-top: 16px;
+ }
+ 
+ /* Change styles for span and cancel button on extra small screens */
+ @media screen and (max-width: 300px) {
+   span.psw {
+     display: block;
+     float: none;
+   }
+   .cancelbtn {
+     width: 100%;
+   }
+ }
+/* Mussab's code*/
+/* Style the search box */
+/*form {
+   background-color: #c3c4d4;
+   width: 80%;
+   height: 44px;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+
+input {
+   all: unset;
+   font: 16px system-ui;
+   color: #fff;
+   height: 100%;
+   width: 100%;
+   padding: 6px 10px;
+}
+
+::placeholder {
+   color: #fff;
+   opacity: 0.7; 
  }
 
 
 
- /* CSS Link Colour  from W3Schools: @author https://www.w3schools.com/html/html_links_colors.asp */
- .footerlink {
-  padding: 10px;
- }
- .footerlink a{
-  color: #f2f2f2;
-  background-color: transparent;
-  text-decoration: none;
- }
- .footerlink a:hover {
-  color: orangered;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-
-.breadcrumbs {
-  padding: 10px 10px 10px 45px;
-  background-color: #bdbdbd;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.breadcrumbs a{
-  color: purple;
-  background-color: transparent;
-  text-decoration: none;
-}
-.breadcrumbs a:hover {
-  color: firebrick;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-
-
-.header a{
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
- }
-
-
-
- /* Header (div) formatting */
-.header2 {
-  padding: 10px;
-  text-align: center;
-  background-color: #cccccc;
-  color: #000000;
-}
-.header2 h2 {
-  font-size: 35px;
-}
-
-
-
-.footerlink2 {
-  padding: 10px 10px 0px 10px;
-  text-align: left;
- }
- .footerlink2 a{
-  color: #f2f2f2;
-  background-color: transparent;
-  text-decoration: none;
- }
-
-
-
-
- .column2 {
-  float: left;
-  width: 50%;
-}
-.column50NoChange {
-  float: left;
-  width: 50%;
-}
-
-
-
-.column-66 {
-  float: left;
-  width: 66.66%;
-}
-
-.column-33 {
-  float: left;
-  width: 33.33%;
-}
-
-
-
-table.center {
-  margin-left: auto; 
-  margin-right: auto;
-}
-
-
-.divScroll {
-  overflow: auto;
-  max-width: 100%;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  height: 53%;
-}
-
-
-
-
-
-.content {
-  /*. height: 100%;*/
-  padding: 15px 50px 50px 50px;
-  margin: 0% 8%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #ededed;
-
-  /* website fits browser resolution */
-  width:100%;
-  min-width:1000px;
-  height:auto;
-}
-
-
-  
-tbody tr:nth-child(even) {background: #f3ebdd;}
-
-tbody tr:hover {   background-color: #333;
-  color: #f2f2f2;}
-
-
-/*
-* @author Code Isshin, YouTube Link: https://youtu.be/tYdlt9q6Iug
-* GitHub Link: https://github.com/zangetsu-isshin/dropdown-filter/tree/main
-*/ /* Formatting of table: */  
 table {
-  min-width: max-content;
-  
-  border-collapse: separate;
-  border-spacing: 0px;    
-}
-.table-filter {
-  border-radius: 5px;
-}
-table th{
-  position: sticky; 
-  top: 0px;
-  
-  background-color: #333;
-  color: rgb(241, 245, 179);
-  
-  text-align: center;
-  font-weight: normal;
-  font-size: 18px;
-  outline: 0.7px solid black;
-  border: 1.5px solid black;
-} 
-table th, table td {
-  padding: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-table td {
-  text-align: left;
-  
-  font-size: 15px;
-  border: 1px solid rgb(177, 177, 177);
-  padding-left: 20px;
+   position: relative;
+   left: 50px;
+   clear: both;
+   border-collapse: collapse;
+   width: 500px;
+   border: 1px solid;
+   border-color: #d3d3d3e3;
+   padding-right: 0px;
+   margin-right: 0px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-/* Un-columns the columns once the width of the browser is less than 1100px */
-/* @author https://www.w3schools.com/howto/howto_css_zig_zag_layout.asp */
-/* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
-@media screen and (max-width: 1100px) {
-  .column, .column2, .column-33, .column-66 {
-    width: 100%;
-    text-align: center;
-  }
+td {
+   border: 1px solid;
+   border-color: #d3d3d3e3;
+   font-size: small;
+   font-size: x-small;
 }
 
-
-/* Makes the width of labels, input, select the same and inline */
-.form-group label {
-  display: inline-block;
-  width: 25%;
-}
-.form-group input {
-  display: inline-block;
-  width: 25%;
-}
-.form-group select {
-  display: inline-block;
-  width: 25%;
+th {
+   font-size: x-small;
 }
 
-
-
-/* @author https://www.w3schools.com/howto/howto_js_dropdown.asp */
-
-/* @author https://www.w3schools.com/howto/howto_css_dropdown.asp */
-.dropbtn {
-  background-color: #333;
-  color: #f2f2f2;
-  padding: 5px 10px 5px 10px;
-  font-size: 16px;
-  border: none;
+.TableFixHead {
+   clear: both;
+   overflow-y: auto;
+   box-sizing: border-box;
+   height: 350px;
+   will-change: transform;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+form.input[type=text] {
+   padding: 10px;
+   font-size: 17px;
+   border: 1px solid grey;
+   float: left;
+   width: 80%;
+   background: #f1f1f1;
+}
+ 
+ // Style the submit button 
+form.example button {
+   float: left;
+   width: 20%;
+   padding: 10px;
+   background: #2196F3;
+   color: white;
+   font-size: 17px;
+   border: 1px solid grey;
+   border-left: none; // Prevent double borders 
+   cursor: pointer;
+}
+ 
+form.example button:hover {
+   background: #ebecee;
+}
+ 
+ // Clear floats 
+form.example::after {
+   content: "";
+   clear: both;
+   display: table;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ddd;
-  min-width: 160px;
-  width: 300px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  right: 0;
-  z-index: 1;
+select.options {
+   position: relative;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+#search-button {
+   width: 100px;
+   height: 50px;
 }
-
-.dropdown-content a:hover {
-  background-color: #333;
-  color: #f2f2f2;}
-
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: gray;}
-
-
-
-/* Allowa pictures to be shown in div, where text is then centred */
-/* @author https://www.w3schools.com/howto/howto_css_navbar_image.asp */
-.bg-img {
-  /* The image used */
-  background-image: url("test.jpg");
-
- /* min-height: 380px; */
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  /* Needed to position the navbar */
-  position: relative;
+     
+#search-button svg {
+   width: 25px;
+   height: 25px;
 }
-
-/* Position the navbar container inside the image */
-.container {
-/*	padding-top: 100px; */
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+#search-icon {
+   fill: white;
 }
-
-.effect8
-{
-    position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-.effect8:before, .effect8:after
-{
-  content:"";
-    position:absolute;
-    z-index:-1;
-    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:10px;
-    bottom:10px;
-    left:0;
-    right:0;
-    -moz-border-radius:100px / 10px;
-    border-radius:100px / 10px;
-}
-.effect8:after
-{
-  right:10px;
-    left:auto;
-    -webkit-transform:skew(8deg) rotate(3deg);
-       -moz-transform:skew(8deg) rotate(3deg);
-        -ms-transform:skew(8deg) rotate(3deg);
-         -o-transform:skew(8deg) rotate(3deg);
-            transform:skew(8deg) rotate(3deg);
-}
-.effect8 {
-  text-align: center;
-}
+ */ 

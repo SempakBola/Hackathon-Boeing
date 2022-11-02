@@ -19,10 +19,6 @@ public class App {
     public static final String      CSS_DIR         = "css/";
     public static final String      IMAGES_DIR      = "images/";
 
-    // Added JavaScript directory
-    public static final String      JAVASCRIPT_DIR  = "js/";
-
-
     public static void main(String[] args) {
         // Create our HTTP server and listen in port 7000
         Javalin app = Javalin.create(config -> {
@@ -33,10 +29,6 @@ public class App {
 
             // Uncomment this if you have files in the Images Directory
             config.addStaticFiles(IMAGES_DIR);
-
-            // Uncomment this if you have files in the JS Directory - Additional 
-            config.addStaticFiles(JAVASCRIPT_DIR);
-
         }).start(JAVALIN_PORT);
 
 
@@ -51,7 +43,7 @@ public class App {
         app.get(PageST21.URL, new PageST21());
         app.get(PageST22.URL, new PageST22());
         app.get(PageST31.URL, new PageST31());
-        app.get(PageST32.URL, new PageST32());
+        //app.get(PageST32.URL, new PageST32());
 
         // Add / uncomment POST commands for any pages that need web form POSTS
         app.post(PageIndex.URL, new PageIndex());
@@ -59,7 +51,7 @@ public class App {
         app.post(PageST21.URL, new PageST21());
         app.post(PageST22.URL, new PageST22());
         app.post(PageST31.URL, new PageST31());
-        app.post(PageST32.URL, new PageST32());
+        //app.post(PageST32.URL, new PageST32());
     }
 
 }
