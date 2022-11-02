@@ -1,0 +1,35 @@
+References
+
+File: "filter.js" - src\main\resources\js\filter.js
+
+    Author Code Isshin, YouTube Link: https://youtu.be/tYdlt9q6Iug
+    GitHub Link: https://github.com/zangetsu-isshin/dropdown-filter/tree/main
+
+    Link to external field where the code is used from: 
+    https://raw.githubusercontent.com/zangetsu-isshin/dropdown-filter/main/filter.js
+
+
+
+Helped me create a dropdown menu, thus creating a hamburger menu
+
+    https://www.w3schools.com/howto/howto_css_dropdown.asp
+
+
+
+/* Un-columns the columns once the width of the browser is less than 1100px */
+/* https://www.w3schools.com/howto/howto_css_zig_zag_layout.asp */
+
+
+
+/* CSS Row from W3Schools: https://www.w3schools.com/howto/howto_css_three_columns.asp */
+
+
+
+
+ /* CSS Link Colour  from W3Schools: https://www.w3schools.com/html/html_links_colors.asp */
+
+
+
+
+Allows people to select language
+ https://www.w3schools.com/howto/howto_google_translate.asp 
